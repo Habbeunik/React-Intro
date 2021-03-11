@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  width: 100%;
+  height: 100vh;
 }
 
 .App-logo {
@@ -38,8 +40,31 @@
 }
 
 .card {
-  background-color: aliceblue;
-  box-shadow: 3px 3px 3px black;
-  width: 200px;
-  height: 600px;
+  background-color: white;
+  box-shadow: 1px 1px 4px #ccc;
+  width: 60%;
+  margin: auto;
+  margin-top: 20vh;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+.range {
+  width: 100%;
+}
+
+.rangeContainer {
+  display: flex;
+}
+
+.audioControlButton {
+  border: none;
+  border-radius: 0;
+  background-color: blue;
+  color: white;
+  padding: 12px 30px;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 20px;
 }
