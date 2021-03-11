@@ -26,7 +26,7 @@ class App extends React.Component {
 
   handleRangeIncrease() {
     function updateState(prevState) {
-      if (prevState.rangeInputValue < 100) {
+      if (prevState.rangeInputValue < 218) {
         const newRangeInputValue = prevState.rangeInputValue + 5;
         const newState = { rangeInputValue: newRangeInputValue };
         return newState;
@@ -43,7 +43,7 @@ class App extends React.Component {
 
   handleRangeDecrease() {
     function decreaseState(prevState) {
-      if (prevState.rangeInputValue > 0) {
+      if (prevState.rangeInputValue > 40) {
         const newRangeInputValue = prevState.rangeInputValue - 5;
         const newState = { rangeInputValue: newRangeInputValue };
         return newState;
@@ -99,6 +99,8 @@ class App extends React.Component {
               className="range"
               value={this.state.rangeInputValue}
               onChange={this.handleRangeInputChange}
+              min={40}
+              max={218}
             />
             <button onClick={this.handleRangeIncrease}>+</button>
           </div>
